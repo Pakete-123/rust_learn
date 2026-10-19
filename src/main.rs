@@ -1,5 +1,5 @@
 fn main() {
-    let x = 5;
+    let x = 8;
     let mut y = 5;
     let z = y;
     y = 6;
@@ -22,5 +22,10 @@ fn main() {
 
 fn suma(a: i32, b: i32) -> i32 {
     println!("Funciones: se declaran con 'fn nombre(arg1: tipo...) -> tipo de retorno', lo que en java equivale a 'public static tipo nombre(tipo arg1...)'. El valor devuelto es la última expresión sin ';'. Se puede poner return para salir antes de tiempo.");
+    if a > 5 {
+        println!("{a} es mayor que 5");
+        return a + b;
+    }
+    println!("{a} es menor o igual que 5");
     a + b
 }
